@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.kenny.myapplication.login"
+    tools:layout_editor_absoluteY="81dp">
+
+    <TextView
+        android:id="@+id/loginhome"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#FFCDD2"
+        android:gravity="center"
+        android:text="登入"
+        android:textColor="#000000"
+        android:textSize="36sp"
+        tools:layout_editor_absoluteY="3dp"
+        tools:text="@string/loginhoime" />
+
+
+</RelativeLayout>

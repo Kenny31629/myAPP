@@ -1,20 +1,19 @@
 <?xml version="1.0" encoding="utf-8"?>
-<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    tools:context="com.example.kenny.myapplication.MainActivity">
+    android:layout_height="match_parent">
 
     <TextView
-        android:layout_width="390dp"
-        android:layout_height="100dp"
-        android:layout_marginEnd="8dp"
+        android:id="@+id/homepage"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
         android:background="#FFCDD2"
         android:gravity="center"
-        android:text="吾居無束"
+        android:text="@string/homepage"
         android:textColor="#000000"
-        android:textSize="48dp"
+        android:textSize="48sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.0"
@@ -25,19 +24,37 @@
 
 
     <Button
-        android:layout_width="390dp"
-        android:layout_height="70dp"
+
+        android:id="@+id/login"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/register"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginBottom="27dp"
         android:background="#00BFA5"
         android:gravity="center"
-        android:text="註冊"
+        android:onClick="jumpTologin"
+        android:text="登入"
         android:textColor="#000000"
-        android:textSize="28dp"
+        android:textSize="28sp"
         android:visibility="visible"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintRight_toRightOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.8" />
 
-</android.support.constraint.ConstraintLayout>
+    <Button
+
+        android:id="@+id/register"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:background="#00BFA5"
+        android:gravity="center"
+        android:onClick="jumpToregister"
+        android:text="@string/register"
+        android:textColor="#000000"
+        android:textSize="28sp"
+        android:visibility="visible"
+        app:layout_constraintVertical_bias="0.8" />
+
+
+</RelativeLayout>

@@ -1,3 +1,7 @@
 <resources>
     <string name="app_name">My Application</string>
+    <string name="homepage">吾居無束</string>
+    <string name="login">登入</string>
+    <string name="register">註冊</string>
+    <string name="loginhoime">登入</string>
 </resources>
